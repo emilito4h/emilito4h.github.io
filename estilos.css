@@ -33,6 +33,39 @@ h1 {
   text-align: center;
   font-size: 60px;
 }
+
+h2 {
+  margin: 35px; 
+  font-family: Verdana;
+  font-weight: 50;
+  color: rgb(199, 231, 81);
+  text-align: center;
+  font-size: 35px;
+}
+
+h3 {
+  margin: 25px; 
+  font-family: Verdana;
+  font-weight: 50;
+  color: rgb(199, 231, 81);
+  text-align: center;
+  font-size: 25px;
+}
+
+p {
+  margin-left: 25px; 
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 50;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 17px;
+}
+
+li {
+  margin: 25px;
+}
 /* esto es un comentario */
 
 /* aclara el fondo del link cuando pasas sobre él */

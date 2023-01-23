@@ -1,0 +1,79 @@
+
+/* idea genial para poner bordes a las letras */
+body {text-shadow: 1px 1px 0 #000,
+  -1px 1px 0 #000,
+  1px -1px 0 #000,
+  -1px -1px 0 #000,
+  0px 1px 0 #000,
+  0px -1px 0 #000,
+  -1px 0px 0 #000,
+  1px 0px 0 #000,
+  2px 2px 0 #000,
+  -2px 2px 0 #000,
+  2px -2px 0 #000,
+  -2px -2px 0 #000,
+  0px 2px 0 #000,
+  0px -2px 0 #000,
+  -2px 0px 0 #000,
+  2px 0px 0 #000,
+  1px 2px 0 #000,
+  -1px 2px 0 #000,
+  1px -2px 0 #000,
+  -1px -2px 0 #000,
+  2px 1px 0 #000,
+  -2px 1px 0 #000,
+  2px -1px 0 #000,
+  -2px -1px 0 #000;}
+
+h1 { 
+  margin: 50px; 
+  font-family: Verdana;
+  font-weight: 50;
+  color: rgb(194, 142, 31);
+  text-align: center;
+  font-size: 60px;
+}
+/* esto es un comentario */
+
+/* aclara el fondo del link cuando pasas sobre él */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+#seccion_informacion_personal {
+  padding-top:100px;
+  color: #fff; 
+  background-image: url("https://i.postimg.cc/mcYdWYFY/georgeinfpers.jpg") ;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
+#seccion_experiencia {
+  padding-top:100px;
+ 
+  color: #fff;
+  background-image: url("https://i.postimg.cc/jW081gCq/georgeexperiencia.jpg") ;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+#seccion_habilidades {
+  padding-top:100px;
+  padding-bottom: 500px;
+  color: #fff; 
+  background-image: url("https://i.postimg.cc/xJgtc95q/georgegolf.png") ;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+#seccion_contacto {
+  padding-top:200px;
+  color: #fff; 
+  background-color: #000000;
+}

@@ -76,6 +76,7 @@ li a:hover {
 
 #seccion_informacion_personal {
   padding-top:100px;
+  margin: 20px;
   color: #fff; 
   background-image: url("imagenes/georgeinfpers.jpg") ;
   background-position: top center;

@@ -74,6 +74,11 @@ li a:hover {
   color: white;
 }
 
+.navbar-toggler{
+  width: 100%;
+  float: none;
+}
+
 #seccion_informacion_personal {
   padding-top:100px;
   margin: 20px;

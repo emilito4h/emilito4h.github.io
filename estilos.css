@@ -1,4 +1,5 @@
 
+/* esto es un comentario */
 /* idea genial para poner bordes a las letras */
 body {text-shadow: 1px 1px 0 #000,
   -1px 1px 0 #000,
@@ -23,7 +24,9 @@ body {text-shadow: 1px 1px 0 #000,
   2px 1px 0 #000,
   -2px 1px 0 #000,
   2px -1px 0 #000,
-  -2px -1px 0 #000;}
+  -2px -1px 0 #000;
+}
+
 
 h1 { 
   margin: 50px; 
@@ -31,7 +34,7 @@ h1 {
   font-weight: 50;
   color: rgb(194, 142, 31);
   text-align: center;
-  font-size: 60px;
+  font-size: xx-large;
 }
 
 h2 {
@@ -40,7 +43,7 @@ h2 {
   font-weight: 50;
   color: rgb(199, 231, 81);
   text-align: center;
-  font-size: 35px;
+  font-size: x-large;
 }
 
 h3 {
@@ -49,7 +52,7 @@ h3 {
   font-weight: 50;
   color: rgb(199, 231, 81);
   text-align: center;
-  font-size: 25px;
+  font-size: large;
 }
 
 p {
@@ -60,18 +63,40 @@ p {
   font-weight: 50;
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 17px;
+  font-size: medium;
 }
 
 li {
   margin: 25px;
 }
-/* esto es un comentario */
+
 
 /* aclara el fondo del link cuando pasas sobre él */
 li a:hover {
-  background-color: #555;
+  background-color: rgb(63, 63, 63);
   color: white;
+}
+
+.rounded-pill{
+  background-color: rgba(204, 0, 255, 0.356);
+  text-align: center;
+  float: none;
+  
+}
+
+a{
+  padding: 20px;
+  margin: 20px; 
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+span{
+  font-size: xx-small;
+}
+.container-sm{
+  text-align: center;
 }
 
 .navbar-toggler{
@@ -91,28 +116,26 @@ li a:hover {
  
 #seccion_experiencia {
   padding-top:100px;
- 
+  margin: 20px;
   color: #fff;
   background-image: url("imagenes/georgeexperiencia.jpg") ;
   background-position: top center;
-  background-size: cover;
   background-repeat: no-repeat;
-  
+  background-size: cover;  
 }
 
 #seccion_habilidades {
   padding-top:100px;
-  padding-bottom: 500px;
+  margin: 20px;
   color: #fff; 
   background-image: url("imagenes/georgegolf.png") ;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 #seccion_contacto {
-  padding-top:200px;
+  padding-top:100px;
   color: #fff; 
   background-color: #000000;
 }

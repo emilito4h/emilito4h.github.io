@@ -81,10 +81,6 @@ li a:hover {
   background-color: rgba(204, 0, 255, 0.356);
   text-align: center;
   float: none;
-  
-}
-
-a{
   padding: 20px;
   margin: 20px; 
   color: #fff;
@@ -92,16 +88,28 @@ a{
   text-align: center;
 }
 
+a{
+  margin: 0;
+  padding: 0;
+}
+
 span{
   font-size: xx-small;
 }
+
 .container-sm{
   text-align: center;
 }
 
+nav{
+  text-align: center;
+  margin: 0px;
+  padding: 0px
+  
+}
 .navbar-toggler{
-  width: 100%;
-  float: none;
+  font-size: larger;
+  
 }
 
 #seccion_informacion_personal {

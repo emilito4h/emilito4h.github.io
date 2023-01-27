@@ -31,28 +31,25 @@ body {text-shadow: 1px 1px 0 #000,
 h1 { 
   margin: 50px; 
   font-family: Verdana;
-  font-weight: 50;
   color: rgb(194, 142, 31);
   text-align: center;
-  font-size: xx-large;
+  font-size: 70px;
 }
 
 h2 {
   margin: 35px; 
   font-family: Verdana;
-  font-weight: 50;
   color: rgb(199, 231, 81);
   text-align: center;
-  font-size: x-large;
+  font-size: 50 px;
 }
 
 h3 {
   margin: 25px; 
   font-family: Verdana;
-  font-weight: 50;
   color: rgb(199, 231, 81);
   text-align: center;
-  font-size: large;
+  font-size: 30px;
 }
 
 p {
@@ -60,11 +57,17 @@ p {
   margin-top: 0px;
   margin-bottom: 5px;
   font-family: 'Times New Roman', Times, serif;
-  font-weight: 50;
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: medium;
 }
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  height:fit-content;
+  min-width: fit-content;
+}
+
 
 li {
   margin: 25px;
@@ -77,6 +80,7 @@ li a:hover {
   color: white;
 }
 
+/* para el boton de ir a inicio */
 .rounded-pill{
   background-color: rgba(204, 0, 255, 0.356);
   text-align: center;
@@ -85,31 +89,30 @@ li a:hover {
   margin: 20px; 
   color: #fff;
   text-decoration: none;
-  text-align: center;
 }
 
 a{
   margin: 0;
   padding: 0;
-}
-
-span{
-  font-size: xx-small;
-}
-
-.container-sm{
   text-align: center;
 }
 
-nav{
-  text-align: center;
-  margin: 0px;
-  padding: 0px
-  
+footer p {
+  font-size: 7px;
 }
-.navbar-toggler{
-  font-size: larger;
-  
+
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#collapsibleNavbar {
+  padding: 0px;
+  margin: 0%;
+ height:fit-content;
+ width: 200 px;
 }
 
 #seccion_informacion_personal {
@@ -146,4 +149,8 @@ nav{
   padding-top:100px;
   color: #fff; 
   background-color: #000000;
+}
+
+#creador {
+  font-size: 5px;
 }

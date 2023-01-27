@@ -21,9 +21,9 @@
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
   <!-- nav es un tag define links de navegacion-->
-  
-        <nav id="nab" class="navbar navbar-expand-sm bg-black navbar-dark justify-content-center" >   
-           <!-- 
+  <div>
+        <nav id="nab" class="navbar navbar-expand-sm bg-black navbar-dark" >   
+           
             <button 
              class="navbar-toggler"
              type="button"
@@ -31,9 +31,9 @@
              data-bs-target="#collapsibleNavbar">
              <span class="navbar-toggler-icon"></span>
             </button>
-            -->
-<!-- "collapse navbar-collapse justify-content-center"  -->
-            <div>
+            
+
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     
                     <li class="nav-item">
@@ -47,7 +47,7 @@
                          with = "36"
                          height="36">
                          Informacion personal
-                         </a>
+                        </a>
                     </li>
            
                     <li class="nav-item">
@@ -92,7 +92,7 @@
                 </ul>
             </div> 
         </nav>
-    
+    </div>
 
     <div class="row" id="seccion_informacion_personal">
         
@@ -241,8 +241,8 @@
         </div>
     </nav>
 
-    <div class="container-sm">
-        <span>Pagina creada por Emiliano Alvarez</span>
+    <div class="container-fluid" id="creador"></div>
+        <p>Pagina creada por Emiliano Alvarez</p>
     </div>
 </footer>
 </html>

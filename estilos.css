@@ -29,11 +29,12 @@ body {text-shadow: 1px 1px 0 #000,
 
 
 h1 { 
-  margin: 50px; 
+  margin-top: 50px; 
+  margin-bottom: 50px;
   font-family: Verdana;
   color: rgb(194, 142, 31);
   text-align: center;
-  font-size: 70px;
+  font-size: 7vw;
 }
 
 h2 {
@@ -41,7 +42,7 @@ h2 {
   font-family: Verdana;
   color: rgb(199, 231, 81);
   text-align: center;
-  font-size: 50 px;
+  font-size: 4vw;
 }
 
 h3 {
@@ -49,7 +50,7 @@ h3 {
   font-family: Verdana;
   color: rgb(199, 231, 81);
   text-align: center;
-  font-size: 30px;
+  font-size: 3vw;
 }
 
 p {
@@ -116,33 +117,33 @@ img{
 }
 
 #seccion_informacion_personal {
-  padding-top:100px;
+  padding-top:5px;
   margin: 20px;
   color: #fff; 
   background-image: url("imagenes/georgeinfpers.jpg") ;
   background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat-y;
+  background-size: 100vh;
 }
  
 #seccion_experiencia {
-  padding-top:100px;
+  padding-top:5px;
   margin: 20px;
   color: #fff;
   background-image: url("imagenes/georgeexperiencia.jpg") ;
   background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;  
+  background-repeat: repeat-y;
+  background-size: 100vh;  
 }
 
 #seccion_habilidades {
-  padding-top:100px;
+  padding-top:5px;
   margin: 20px;
   color: #fff; 
   background-image: url("imagenes/georgegolf.png") ;
   background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat-y;
+  background-size: 100vh;
 }
 
 #seccion_contacto {

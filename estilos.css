@@ -106,6 +106,8 @@ body {text-shadow: 1px 1px 0 #000,
   position: fixed;
   float: right;
   display: block;
+  right: 0;
+  top: 0;
 }
 #perfil p{
   font-size: 1.5vw;

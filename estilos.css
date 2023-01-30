@@ -1,7 +1,8 @@
 
 /* esto es un comentario */
 /* idea genial para poner bordes a las letras */
-body {text-shadow: 1px 1px 0 #000,
+body {
+  text-shadow: 1px 1px 0 #000,
   -1px 1px 0 #000,
   1px -1px 0 #000,
   -1px -1px 0 #000,
@@ -27,7 +28,7 @@ body {text-shadow: 1px 1px 0 #000,
   -2px -1px 0 #000;
 }
 
-/* esto es un comentario */
+/* esto es un comentario 
 .bg-image {
   height: 50%;
   background-position: center;
@@ -38,14 +39,21 @@ body {text-shadow: 1px 1px 0 #000,
 .img1 { background-image: url(imagenes\georgeinfpers.jpg);}
 .img2 { background-image: url(imagenes\georgeexperiencia.jpg);}
 .img3 { background-image: url(imagenes\georgegolf.jpg);}
+*/
+
+
 
 /* barra responsiva */
 .barrasup {
   background-color: #000;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.barrasup a{
+.barrasup a {
+  width: 20%;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -78,16 +86,12 @@ body {text-shadow: 1px 1px 0 #000,
 }
 
 @media screen and (max-width: 600px) {
-    .barrasup.responsiva a.icono {
-    position: absolute;
-    left: 0;
-    top: 0;
+ .barrasup.responsiva a.icono {}
+ .barrasup.responsiva { 
+   position: fixed;
+   opacity:0.8 ;
   }
-    .barrasup.responsiva 
-  {position: fixed;
-  opacity:0.8 ;}
-  
-  .barrasup.responsiva a {
+ .barrasup.responsiva a {
     float: none;
     display: block;
     text-align: center;
@@ -96,29 +100,38 @@ body {text-shadow: 1px 1px 0 #000,
 
 /*para icono de 3 lineas */
 .lineablanca{
-  width: 35px;
-  height: 5px;
-  background-color: rgb(255, 255, 255);
-  margin: 6px 0;
+ width: 35px;
+ height: 5px;
+ background-color: rgb(255, 255, 255);
+ margin: 6px 0;
 }
 
-#perfil{
+.cuerpo {
+  margin-top: 100px;
+}
+
+.perfil {
   position: fixed;
   float: right;
   display: block;
   right: 0;
   top: 0;
 }
-#perfil p{
+
+.perfil a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
   font-size: 1.5vw;
-  text-align: center;
+  text-align: justify;
 }
-#perfil img{
+
+.perfil img{
   border-radius: 50%;
   width: 15vw;
 }
 
-#perfil img:hover{
+.perfil img:hover{
   animation: sacude 0.5s;
   animation-iteration-count: infinite;
 }
@@ -137,41 +150,45 @@ body {text-shadow: 1px 1px 0 #000,
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-
+.perfil span {
+  display: block;
+  float: none;
+}
 
 h1 { 
-  margin-top: 50px; 
-  margin-bottom: 50px;
+  margin: 50px 0px 0px 50px;
   font-family: Verdana;
   color: rgb(194, 142, 31);
   text-align: left;
-  font-size: 7vw;
+  /*
+  font-size: 7vw;*/
 }
 
 h2 {
-  margin: 35px; 
+  margin: 35px 0px 0px 35px; 
   font-family: Verdana;
   color: rgb(199, 231, 81);
   text-align: left;
-  font-size: 4vw;
+  /*
+  font-size: 4vw;*/
 }
 
 h3 {
-  margin: 25px; 
+  margin: 25px 0px 0px 10px; 
   font-family: Verdana;
   color: rgb(199, 231, 81);
   text-align: left;
-  font-size: 3vw;
+  /*
+  font-size: 3vw;*/
 }
 
 p {
-  margin-left: 25px; 
-  margin-top: 0px;
-  margin-bottom: 5px;
-  font-family: 'Times New Roman', Times, serif;
+  margin: 5px 0px 0px 50px; 
+  font-family: Verdana;
   color: rgb(255, 255, 255);
   text-align: left;
-  font-size: 2vw;
+  /*
+  font-size: 3vw;*/
 }
 
 ul {
@@ -181,12 +198,21 @@ ul {
   min-width: fit-content;
 }
 
-
 li {
   margin: 25px;
 }
 
+a{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* para el boton de ir a inicio */
 .rounded-pill{
@@ -199,48 +225,24 @@ li {
   text-decoration: none;
 }
 
-a{
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-#creador
-#creador p{
-  text-align: center;
-  font-size: 1vw;
-}
-
-
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #inicio a{
   display: block;
   font-size: 2.5vw;
 }
 
-
-
-
-
-
 #seccion_informacion_personal {
-  padding-top:5px;
+  padding-top: 100px;
   margin: 20px;
   color: #fff; 
+  background-attachment: local;
   background-image: url("imagenes/georgeinfpers.jpg") ;
   background-position: top center;
-  background-repeat: repeat-y;
-  background-size: contain
-  
+  background-repeat: no-repeat;
+  background-size: cover;
 }
  
 #seccion_experiencia {
-  padding-top:5px;
+  padding-top: 100px;
   margin: 20px;
   color: #fff;
   background-image: url("imagenes/georgeexperiencia.jpg") ;
@@ -249,8 +251,17 @@ img{
   background-size: cover;
 }
 
+#seccion_experiencia p {
+  margin-left: 25px; 
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
 #seccion_habilidades {
-  padding-top:5px;
+  padding-top: 100px;
   margin: 20px;
   color: #fff; 
   background-image: url("imagenes/georgegolf.png") ;
@@ -265,6 +276,40 @@ img{
   background-color: #000000;
 }
 
-#creador {
-  font-size: 0.5vw;
+.barrainf {
+  position: relative;
+  display: block;
+  float: none;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.barrainf a{
+  width: 25%;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.barrainf a:hover {
+  background-color: rgb(58, 58, 58);
+  color: rgb(255, 255, 255);
+}
+
+.creador {
+  background-color: #000000;
+  display: block;
+  float: none;
+  text-align: center;
+}
+
+.creador p{
+  color: #f2f2f2;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1vw;
 }

@@ -9,21 +9,20 @@
     <meta name="author" content="Emiliano Alvarez">
     <title>CV de George Constanza</title>
     <link rel="icon" href="imagenes\George-costanza.ico">
-    <link rel="stylesheet" href="bootstrap.min.css">  
     <!-- bootstrap-->
+    <link rel="stylesheet" href="bootstrap.min.css">  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-   
 </head>
 
-<body data-bs-spy="scroll"  data-bs-offset="10">
+<body data-bs-spy="scroll" data-bs-target=".barrasup">
   
-  <div class="barrasup" id="barranavegacion">
+    <div class="barrasup" id="barranavegacion">
        
+        <ul class="nav-bar-nav">
         <a class="icono" 
          href="javascript:void(0);" 
-         onclick="myFunction()">
+         onclick="abrecierraBarra()">
          <div class="lineablanca"></div>
          <div class="lineablanca"></div>
          <div class="lineablanca"></div>
@@ -31,6 +30,7 @@
 
         <a class="nav-link"
          href="#seccion_informacion_personal" 
+         onclick="abrecierraBarra()"
          title="Conoceme profundamente">
          <img src="imagenes/informacion_personal.png"
          alt =""
@@ -41,6 +41,7 @@
        
         <a class="nav-link"
          href="#seccion_experiencia"
+         onclick="abrecierraBarra()"
          title="Uffff la de cosas que hice">
          <img src="imagenes/cavando.png"
          alt =""
@@ -51,6 +52,7 @@
        
         <a class="nav-link"
          href="#seccion_habilidades"
+         onclick="abrecierraBarra()"
          title="Multitasking sobre todo">
          <img src="imagenes/malabares.png"
          alt =""
@@ -61,6 +63,7 @@
        
         <a class="nav-link"
          href="#seccion_contacto"
+         onclick="abrecierraBarra()"
          title="Ya!!!, ahora, no esperes mas!">
          <img src="imagenes/contacto.png"
          alt ="contacto"
@@ -68,182 +71,174 @@
          height="36">
          Contactame ahora!
         </a>
-
+    </ul>
         
     </div>
-   <!--
+   <!-- bootstrap
     <div class="bg-image img1"></div>
     <div class="bg-image img2"></div>
-    <div class="bg-image img3"></div>
--->
-    <div id="perfil">
-        <img title="decargalo Gratis!!" type="button" src="imagenes\foto perfil.jpg" alt="">
-       <p> Descarga mi CV </p>
-       <p> y tenelo offline!!</p>
+    <div class="bg-image img3"></div>-->
+
+    <div class="perfil">
+        <a href="CVGerogeCostanza.pdf" download="CVGerogeCostanza.pdf">
+          <img title="decargalo Gratis!!" src="imagenes\foto perfil.jpg" alt="">
+         <span> Descarga mi CV </span>
+         <span> y tenelo offline </span>
+        </a>
     </div>
 
-    <div class="row" id="seccion_informacion_personal">
+    <div class="cuerpo">
         
-       
-        
-        <div class="col-sm-3">
-        </div>
-        
-        <div class="col-sm-6">
-            <div>
-             <h1>Informacion personal</h1>
-             <h2>George Louis Costanza</h2>
-             <p>Alias: Art Vandelay</p>
-             <p>Padre: Frank Costanza Madre: Estelle Costanza </p>
-             <p>Contacto de emergencia: Jerry Seinfeld</p>
-             <p>Nacido en Brooklyn, Nueva York el 1 de Diciembre de 1953</p>
-             <p>Estudios secundarios en "John F. Kennedy High School"</p>
-             <p>Estado civil: Viudo</p>
+        <div class="row" id="seccion_informacion_personal">
+            <div class="col-sm-3">
             </div>
-
-            <div class="button" id="inicio">
-             <a type="button" href="#barranavegacion" class="rounded-pill">Inicio</a>
-            </div>
-
-        </div>
         
-        <div class="col-sm-3">
-        </div>
-    
-    </div>
-      
-    <div class="row" id="seccion_experiencia">
-        
-        <div class="col-sm-3">
-        </div>
-        
-        <div class="col-sm-6">
-            <h1>Experiencia</h1>
-            
-            <div class="row">
-               
-                <div class="col-sm-6">
-                 <h3>Agente inmobiliario</h3>
-                 <p>En Rick Bahr Properties</p>
-                 <h3>Representante de ventas</h3>
-                 <p>En Sanalac empresa de suministro de paradas de descanso</p>
-                 <h3>Lector de manuscritos</h3>  
-                 <p>En Pendant Publishing editorial, contacto de referencia Elaine Benes</p>
-                 <h3>Ayudante del departamento de viajes</h3> 
-                 <p>En los New York Yankees (equipo de beisbol)</p>
+            <div class="col-sm-6">
+                <div>
+                 <h1>Informacion personal</h1>
+                 <h2>George Louis Costanza</h2>
+                 <p>Alias: Art Vandelay</p>
+                 <p>Padre: Frank Costanza Madre: Estelle Costanza </p>
+                 <p>Contacto de emergencia: Jerry Seinfeld</p>
+                 <p>Nacido en Brooklyn, Nueva York el 1 de Diciembre de 1953</p>
+                 <p>Estudios secundarios en "John F. Kennedy High School"</p>
+                 <p>Estado civil: Viudo</p>
                 </div>
 
-                <div class="col-sm-6">
-                 <h3>Representante de ventas</h3>
-                 <p>En Play Now fabrica de equipos para parque infantiles</p>
-                  <h3>Representante de ventas</h3> 
-                 <p>En Kruger Industrial Smoothing fabrica de suavizante industrial</p>
-                 <h3>Vendedor</h3>  
-                 <p>En negocio familiar de ventas de computadoras</p>
-                 <h3>Guionista</h3>  
-                 <p>Serie "Jerry"</p>
-                </div>
-              
+                <!-- boton volver inicio
                 <div class="button" id="inicio">
-                    <a type="button" href="#barranavegacion" class="rounded-pill">Inicio</a>
+                 <a type="button" href="#barranavegacion" class="rounded-pill">Inicio</a>
                 </div>
-                
-            </div>    
-        </div>
-
-        <div class="col-sm-3">
-        </div> 
-
-    </div>
-       
-   
-    
-    <div class="row" id="seccion_habilidades">
+                -->
+            </div>  
         
-        <div class="col-sm-3">
-        </div>
-        
-        <div class="col-sm-6">
-         <h1>Habilidades</h1>
-            <ul>
-             <li>Evadir responsabilidades</li>
-             <li>Estacionar autos</li>
-             <li>Creador de grandes fabulas</li>
-             <li>Conocedor de la ubicacion de los mejores baños de la ciudad de New York</li>
-            </ul>
-           
-            <div class="button" id="inicio">
-                <a type="button" href="#barranavegacion" class="rounded-pill">Inicio</a>
+            <div class="col-sm-3">
             </div>
+    
         </div>
+      
+        <div class="row" id="seccion_experiencia">
         
-        <div class="col-sm-3">
+            <div class="col-sm-3">
+            </div>
+        
+            <div class="col-sm-6">
+                <h1>Experiencia</h1>
+            
+                <div class="row">
+               
+                    <div class="col-sm-6">
+                     <h3>Agente inmobiliario</h3>
+                     <p>Rick Bahr Properties</p>
+                     <h3>Representante de ventas</h3>
+                     <p>Sanalac (empresa de suministro de paradas de descanso)</p>
+                     <h3>Lector de manuscritos</h3>  
+                     <p>Pendant Publishing editorial, contacto de referencia Elaine Benes</p>
+                     <h3>Ayudante del departamento de viajes</h3> 
+                     <p>New York Yankees (equipo de beisbol)</p>
+                    </div>
+
+                    <div class="col-sm-6">
+                     <h3>Representante de ventas</h3>
+                     <p>Play Now (fabrica de equipos para parque infantiles)</p>
+                     <h3>Representante de ventas</h3> 
+                     <p>Kruger Industrial Smoothing (fabrica de suavizante industrial)</p>
+                     <h3>Vendedor</h3>  
+                     <p>Negocio familiar de ventas de computadoras</p>
+                     <h3>Guionista</h3>  
+                     <p>Serie "Jerry"</p>
+                    </div>
+              
+                    <!-- boton volver inicio
+                    <div class="button" id="inicio">
+                      <a type="button" href="#barranavegacion" class="rounded-pill">Inicio</a>
+                    </div>
+                    -->
+
+                </div>    
+        
+            </div>
+
+            <div class="col-sm-3">
+            </div> 
+
         </div>
+             
+        <div class="row" id="seccion_habilidades">
+        
+            <div class="col-sm-3">
+            </div>
+        
+            <div class="col-sm-6">
+             <h1>Habilidades</h1>
+                <ul>
+                 <li>Evadir responsabilidades</li>
+                 <li>Estacionar autos</li>
+                 <li>Creador de grandes fabulas</li>
+                 <li>Conocedor de la ubicacion de los mejores baños de la ciudad de New York</li>
+                </ul>
+           
+                <!-- boton volver inicio
+                <div class="button" id="inicio">
+                 <a type="button" href="#barranavegacion" class="rounded-pill">Inicio</a>
+                </div>
+                 -->
+            </div>
+        
+            <div class="col-sm-3">
+            </div>
    
+        </div>
     </div>
 
-   <script src="tareas.js"></script>
+    <script src="tareas.js"></script>
 
 </body>
 
-<footer id="seccion_contacto">
-    <nav class="navbar navbar-expand-sm bg-black navbar-dark justify-content-center">
-        <div id="seccion_contactos">
-            
-            <ul class="navbar-nav">
-                
-                <li class="nav-item">
-                    <a class="nav-link active"
-                     href="https://twitter.com/georgecostanza_" target="_blank"> 
-                     <img src="imagenes//twitter.png"
-                     alt =""
-                     with = "36"
-                     height="36"
-                     style="float: top;">
-                     Twitter
-                    </a>
-                </li>
+<footer>
+    
+    <div class="barrainf" id="seccion_contacto">
+                     
+        <a class="nav-link"
+         href="https://twitter.com/georgecostanza_" target="_blank"> 
+         <img src="imagenes//twitter.png"
+         alt =""
+         with = "36"
+         height="36">
+         Twitter
+        </a>
+        
+        <a class="nav-link"
+         href="https://www.instagram.com/g_costanza/" target="_blank">
+         <img src="imagenes/instagram.png"
+         alt =""
+         with = "36"
+         height="36">
+         Instagram
+        </a>
+        
+        <a class="nav-link"
+         href="https://es-la.facebook.com/CostanzaQuotes/events" target="_blank">
+         <img src="imagenes/facebook.png"
+         alt ="contacto de facebook"
+         with = "36"
+         height="36">
+         Facebook
+        </a>
+        
+        <a class="nav-link"
+         href="https://wa.me/+5401161971083" target="_blank">
+         <img src="imagenes/whatsapp.png"
+         alt =""
+         with = "36"
+         height="36">
+         Whatsapp
+        </a>
            
-                <li class="nav-item">
-                    <a class="nav-link active"
-                     href="https://www.instagram.com/g_costanza/" target="_blank">
-                     <img src="imagenes/instagram.png"
-                     alt =""
-                     with = "36"
-                     height="36"
-                     style="float: top;">
-                     Instagram
-                    </a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link active"
-                     href="https://es-la.facebook.com/CostanzaQuotes/events" target="_blank">
-                     <img src="imagenes/facebook.png"
-                     alt ="contacto de facebook"
-                     with = "36"
-                     height="36"
-                     style="float: top;">
-                     Facebook
-                    </a>
-                </li>
+    </div>
+    
 
-                <li class="nav-item">
-                    <a class="nav-link active"
-                     href="https://wa.me/+5401161971083" target="_blank">
-                     <img src="imagenes/whatsapp.png"
-                     alt =""
-                     with = "36"
-                     height="36"
-                     style="float: top;">
-                     Whatsapp
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div id="creador"></div>
+    <div class="creador">
         <p>Pagina creada por Emiliano Alvarez</p>
     </div>
 </footer>

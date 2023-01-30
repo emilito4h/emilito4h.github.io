@@ -50,7 +50,7 @@ h3 {
   font-family: Verdana;
   color: rgb(199, 231, 81);
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
 
 p {
@@ -60,7 +60,7 @@ p {
   font-family: 'Times New Roman', Times, serif;
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 
 ul {
@@ -144,7 +144,7 @@ img{
   background-image: url("imagenes/georgegolf.png") ;
   background-position: top center;
   background-repeat: repeat-y;
-  background-size: 150vh;
+  background-size: 100vmax;
 }
 
 #seccion_contacto {

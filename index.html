@@ -15,11 +15,10 @@
     <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".barrasup">
+<body data-bs-spy="scroll">
   
     <div class="barrasup" id="barranavegacion">
-       
-        <ul class="nav-bar-nav">
+               
         <a class="icono" 
          href="javascript:void(0);" 
          onclick="abrecierraBarra()">
@@ -71,124 +70,164 @@
          height="36">
          Contactame ahora!
         </a>
-    </ul>
-        
+         
     </div>
-   <!-- bootstrap
-    <div class="bg-image img1"></div>
-    <div class="bg-image img2"></div>
-    <div class="bg-image img3"></div>-->
-
+  
     <div class="perfil">
-        <a href="CVGerogeCostanza.pdf" download="CVGerogeCostanza.pdf">
-          <img title="decargalo Gratis!!" src="imagenes\foto perfil.jpg" alt="">
+        <a onclick="abreForm()">
+         <img title="decargalo Gratis!!" src="imagenes\foto perfil.jpg" alt="">
          <span> Descarga mi CV </span>
          <span> y tenelo offline </span>
         </a>
     </div>
 
-    <div class="cuerpo">
-        
-        <div class="row" id="seccion_informacion_personal">
-            <div class="col-sm-3">
-            </div>
-        
-            <div class="col-sm-6">
-                <div>
-                 <h1>Informacion personal</h1>
-                 <h2>George Louis Costanza</h2>
-                 <p>Alias: Art Vandelay</p>
-                 <p>Padre: Frank Costanza Madre: Estelle Costanza </p>
-                 <p>Contacto de emergencia: Jerry Seinfeld</p>
-                 <p>Nacido en Brooklyn, Nueva York el 1 de Diciembre de 1953</p>
-                 <p>Estudios secundarios en "John F. Kennedy High School"</p>
-                 <p>Estado civil: Viudo</p>
-                </div>
-
-                <!-- boton volver inicio
-                <div class="button" id="inicio">
-                 <a type="button" href="#barranavegacion" class="rounded-pill">Inicio</a>
-                </div>
-                -->
-            </div>  
-        
-            <div class="col-sm-3">
-            </div>
-    
-        </div>
-      
-        <div class="row" id="seccion_experiencia">
-        
-            <div class="col-sm-3">
-            </div>
-        
-            <div class="col-sm-6">
-                <h1>Experiencia</h1>
-            
-                <div class="row">
-               
-                    <div class="col-sm-6">
-                     <h3>Agente inmobiliario</h3>
-                     <p>Rick Bahr Properties</p>
-                     <h3>Representante de ventas</h3>
-                     <p>Sanalac (empresa de suministro de paradas de descanso)</p>
-                     <h3>Lector de manuscritos</h3>  
-                     <p>Pendant Publishing editorial, contacto de referencia Elaine Benes</p>
-                     <h3>Ayudante del departamento de viajes</h3> 
-                     <p>New York Yankees (equipo de beisbol)</p>
-                    </div>
-
-                    <div class="col-sm-6">
-                     <h3>Representante de ventas</h3>
-                     <p>Play Now (fabrica de equipos para parque infantiles)</p>
-                     <h3>Representante de ventas</h3> 
-                     <p>Kruger Industrial Smoothing (fabrica de suavizante industrial)</p>
-                     <h3>Vendedor</h3>  
-                     <p>Negocio familiar de ventas de computadoras</p>
-                     <h3>Guionista</h3>  
-                     <p>Serie "Jerry"</p>
-                    </div>
-              
-                    <!-- boton volver inicio
-                    <div class="button" id="inicio">
-                      <a type="button" href="#barranavegacion" class="rounded-pill">Inicio</a>
-                    </div>
-                    -->
-
-                </div>    
-        
-            </div>
-
-            <div class="col-sm-3">
-            </div> 
-
-        </div>
-             
-        <div class="row" id="seccion_habilidades">
-        
-            <div class="col-sm-3">
-            </div>
-        
-            <div class="col-sm-6">
-             <h1>Habilidades</h1>
-                <ul>
-                 <li>Evadir responsabilidades</li>
-                 <li>Estacionar autos</li>
-                 <li>Creador de grandes fabulas</li>
-                 <li>Conocedor de la ubicacion de los mejores baños de la ciudad de New York</li>
-                </ul>
+    <div class="formAparece" id="formularioContacto">
+        <form action= "CVGeorgeCostanza.pdf" class="contenedorForm" target="_blank">
            
-                <!-- boton volver inicio
-                <div class="button" id="inicio">
-                 <a type="button" href="#barranavegacion" class="rounded-pill">Inicio</a>
+            <div class="divisor">
+             <p>Mi CV ya casi esta es tuyo, que te parece si ahora me pasas tu mail, asi estamos en contacto.</p>
+             <label for="email"></label>
+             <input type="email" placeholder="Tu mail" name="email" required>
+            </div>
+            
+            <div class="divisor">
+             <p>De paso califica la pagina, tené en cuenta que un puesto de trabajo depende de esta calificacion.</p>
+             
+                <div class="seleccion">
+                 <input type="radio" id="mala" name="calificaion_de_pagina" value="Mala">
+                 <label for="mala">Es horrible esta pagina</label>
                 </div>
-                 -->
+
+                <div class="seleccion">
+                 <input type="radio" id="normal" name="calificaion_de_pagina" value="Normal">
+                 <label for="normal">Safa, pero puede mejorar</label>
+                </div>
+
+                <div class="seleccion">
+                 <input type="radio" id="buena" name="calificaion_de_pagina" value="Buena">
+                 <label for="buena">Que buenardaaaa la pagina, hay que aumentarle el sueldo al desarrollador</label>
+                </div>
+                
             </div>
         
-            <div class="col-sm-3">
+            <button type="submit" class="btn" onclick="abreGracias()">Listo papá</button>
+            <button type="button" class="btn cancel" onclick="cierraForm()">naaa, estoy muy ocupado</button>
+        
+        </form>    
+    </div>
+
+    <div class="agradecimiento" id="Gracias">
+           
+        <div class="contenedorGracias">
+            
+            <div class="cerrar">
+             <button type="button" onclick="cierraGracias()">x</button>
             </div>
-   
+           
+            <p> Gracias</p>
         </div>
+    </div>
+         
+    <div class="row" id="seccion_informacion_personal">
+           
+        <div class="col-sm-2">
+        </div>
+        
+        <div class="col-sm-8">
+            <div>
+             <h1>Informacion personal</h1>
+             <h3>George Louis Costanza</h3>
+             <p>Alias: Art Vandelay</p>
+             <p>Padre: Frank Costanza</p>
+             <p>Madre: Estelle Costanza </p>
+             <p>Contacto de emergencia: Jerry Seinfeld</p>
+             <p>Nacido en Brooklyn Nueva York, el 1 de Diciembre de 1953</p>
+             <p>Estudios secundarios en "John F. Kennedy High School"</p>
+             <p>Estado civil: Viudo</p>
+            </div>
+
+           <!-- boton volver inicio
+           <div class="button" id="inicio">
+           <a type="button" href="#barranavegacion" class="rounded-pill">Inicio</a>
+           </div>-->
+           
+        </div>  
+        
+        <div class="col-sm-2">
+        </div>
+    
+    </div>
+      
+    <div class="row" id="seccion_experiencia">
+        
+        <div class="col-sm-2">
+        </div>
+        
+        <div class="col-sm-8">
+         <h1>Experiencia</h1>
+            
+            <div class="row">
+               
+                <div class="col-sm-6">
+                 <h4>Agente inmobiliario</h4>
+                 <p>Rick Bahr Properties</p>
+                 <h4>Representante de ventas</h4>
+                 <p>Sanalac (empresa de suministro de paradas de descanso)</p>
+                 <h4>Lector de manuscritos</h4>  
+                 <p>Pendant Publishing editorial, contacto de referencia Elaine Benes</p>
+                 <h4>Ayudante del departamento de viajes</h4> 
+                 <p>New York Yankees (equipo de beisbol)</p>
+                </div>
+
+                <div class="col-sm-6">
+                 <h4>Representante de ventas</h4>
+                 <p>Play Now (fabrica de equipos para parque infantiles)</p>
+                 <h4>Representante de ventas</h4> 
+                 <p>Kruger Industrial Smoothing (fabrica de suavizante industrial)</p>
+                 <h4>Vendedor</h4>  
+                 <p>Negocio familiar de ventas de computadoras</p>
+                 <h4>Guionista</h4>  
+                 <p>Serie "Jerry"</p>
+                </div>
+              
+              <!-- boton volver inicio
+              <div class="button" id="inicio">
+              <a type="button" href="#barranavegacion" class="rounded-pill">Inicio</a>
+              </div>-->
+
+            </div>    
+        
+        </div>
+
+        <div class="col-sm-2">
+        </div> 
+
+    </div>
+             
+    <div class="row" id="seccion_habilidades">
+        
+        <div class="col-sm-2">
+        </div>
+        
+        <div class="col-sm-8">
+         <h1>Habilidades</h1>
+            <ul>
+             <li>Evadir responsabilidades</li>
+             <li>Estacionar autos</li>
+             <li>Creador de grandes fabulas</li>
+             <li>Conocedor de la ubicacion de los mejores baños de la ciudad de New York</li>
+            </ul>
+           
+         <!-- boton volver inicio
+         <div class="button" id="inicio">
+         <a type="button" href="#barranavegacion" class="rounded-pill">Inicio</a>
+         </div-->
+
+        </div>
+        
+        <div class="col-sm-2">
+        </div>
+   
     </div>
 
     <script src="tareas.js"></script>
